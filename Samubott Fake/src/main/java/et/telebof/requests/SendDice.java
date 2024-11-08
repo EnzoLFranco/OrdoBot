@@ -1,0 +1,42 @@
+package et.telebof.requests;
+
+import et.telebof.types.Markup;
+import et.telebof.types.Message;
+import et.telebof.types.ReplyParameters;
+
+public class SendDice extends AbstractBaseRequest<SendDice, Message> {
+    public SendDice(Object chatId, RequestSender requestSender) {
+        super(chatId, requestSender, "sendDice", Message.class);
+    }
+
+    public SendDice emoji(String emoji) {
+        return add("emoji", emoji);
+    }
+
+    public SendDice disableNotification(boolean disableNotification) {
+        return add("disable_notification", disableNotification);
+    }
+
+    public SendDice protectContent(boolean protectContent) {
+        return add("protect_content", protectContent);
+    }
+
+    @Deprecated(since = "v1.5.0")
+    public SendDice replyToMessageId(int replyToMessageId) {
+        return add("reply_to_message_id", replyToMessageId);
+    }
+
+    @Deprecated(since = "v1.5.0")
+    public SendDice allowSendingWithoutReply(boolean allowSendingWithoutReply) {
+        return add("allow_sending_without_reply", allowSendingWithoutReply);
+    }
+
+    public SendDice replyParameters(ReplyParameters replyParameters){
+        return add("reply_parameters", replyParameters);
+    }
+
+    public SendDice replyMarkup(Markup replyMarkup) {
+        return add("reply_markup", replyMarkup);
+    }
+
+}
