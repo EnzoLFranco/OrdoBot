@@ -1,25 +1,15 @@
 import dev.langchain4j.data.document.Document;
-import dev.langchain4j.data.document.DocumentLoader;
-import dev.langchain4j.data.document.FileSystemDocumentLoader;
 
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.List;
 
 public class LoadFile {
-    public static Document loadDocument(String fileName) {
-        Path filePath = toPath(fileName);
-        return FileSystemDocumentLoader.loadDocument(filePath);
-    }
-
-    // Metodo auxiliar para converter o nome do arquivo em um Path
-    private static Path toPath(String fileName) {
-        try {
-            URL fileUrl = DocumentLoader.class.getResource(fileName);
-            return Paths.get(fileUrl.toURI());
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
+    public static Document loadDocument(String filePath) throws IOException {
+        Path path = Path.of(filePath);
+        List<String> lines = Files.readAllLines(path);
+        String documentContent = String.join("\n", lines);
+        return new Document(documentContent);
     }
 }
