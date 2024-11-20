@@ -27,7 +27,7 @@ public class OrdoBot {
         //Comando /help
         bot.onMessage(filter -> filter.commands("help"), (context, message) -> {
             String ajuda = "Comandos disponíveis:\n" +
-                    "- /start: Carrega as informações das criaturas e introduz o bot.\n" +
+                    "- /start: Introduz o bot.\n" +
                     "- /rolar [d4, d6, d8, d10, d12, d20]: Rola o dado especificado.\n" +
                     "- /aleatorio: Exibe uma criatura aleatória.\n" +
                     "- Para informações sobre as criaturas, apenas pergunte! :)";
