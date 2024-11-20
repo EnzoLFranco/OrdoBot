@@ -77,3 +77,115 @@ Atributos:
   - Intelecto: 1
   - Presença: 2
   - Vigor: 3
+
+Nome: Kerberos
+Elemento: Sangue
+Ações: Devorar e Derrubar
+Vulnerabilidade: Morte
+Deslocamento: 18 metros
+Descrição: O Cão de Três Cabeças, uma besta enorme manifestado em uma área paranormal tomada pelo Sangue.
+Defesa: 46
+Pontos de Vida: 1150
+VD: 340
+Atributos:
+  - Agilidade: 4
+  - Força: 5
+  - Intelecto: 0
+  - Presença: 3
+  - Vigor: 5
+
+Nome: Minotauro
+Elemento: Sangue
+Ações: Cravar Chifres
+Vulnerabilidade: Morte
+Deslocamento: 12 metros
+Descrição: A forma de um animal enorme, furioso e bípede, originário das lendas da Mitologia Grega.
+Defesa: 44
+Pontos de Vida: 750
+VD: 280
+Atributos:
+  - Agilidade: 4
+  - Força: 5
+  - Intelecto: 1
+  - Presença: 3
+  - Vigor: 5
+
+Nome: Mulher Afogada
+Elemento: Sangue, Energia e Medo
+Ações: Afogar em Sangue, Arrancar Sangue e Invadir Órgãos
+Vulnerabilidade: Morte
+Deslocamento: 9 metros(em forma líquida, 36 metros)
+Descrição: Uma lenda urbana usada por pais para evitar o desperdício de água, sendo também associada a mulheres que morreram em afogamentos brutais.
+Defesa: 28
+Pontos de Vida: 240
+VD: 140
+Atributos:
+  - Agilidade: 4
+  - Força: 3
+  - Intelecto: 2
+  - Presença: 2
+  - Vigor: 3
+
+Nome: Titã de Sangue
+Elemento: Sangue
+Ações: Estraçalhar
+Vulnerabilidade: Morte
+Deslocamento: 12 metros
+Descrição: Uma criatura monstruosa com mais de quatro metros de altura, manifestados em locais onde massacres e carnificinas aconteceram.
+Defesa: 35
+Pontos de Vida: 550
+VD: 220
+Atributos:
+  - Agilidade: 2
+  - Força: 5
+  - Intelecto: 1
+  - Presença: 1
+  - Vigor: 4
+
+Nome: Zumbi de Sangue
+Elemento: Sangue
+Ações: Garras
+Vulnerabilidade: Morte
+Deslocamento: 9 metros
+Descrição: Quando cadáveres que morrem de maneiras brutais são abandonados em uma área, servem como passagem para a entidade de Sangue tomar controle de sua forma física.
+Defesa: 17
+Pontos de Vida: 45
+VD: 20
+Atributos:
+  - Agilidade: 2
+  - Força: 2
+  - Intelecto: 0
+  - Presença: 1
+  - Vigor: 2
+
+Nome: Zumbi de Sangue Bestial
+Elemento: Sangue
+Ações: Mordida de Sangue e Garra de Sangue
+Vulnerabilidade: Morte
+Deslocamento: 12 metros
+Descrição: Uma versão maior de um Zumbi de Sangue, resultado onde cadáveres foram torturados brutalmente e sentiu dores indescritíveis antes de morrer.
+Defesa: 23
+Pontos de Vida: 200
+VD: 100
+Atributos:
+  - Agilidade: 2
+  - Força: 3
+  - Intelecto: 0
+  - Presença: 2
+  - Vigor: 3
+
+Nome: O Diabo
+Elemento: Sangue, Conhecimento e Medo
+Ações: Explodir em Sangue, Sangrar, Transportar pelo Sangue, Senhor do Sangue, Pacto e Desejos de Sangue
+Vulnerabilidade: Morte
+Deslocamento: 18 metros
+Descrição: O Príncipe do Ódio, o Portador do Trono ou o Sangue Encarnado. O Diabo é uma manifestação mais antigas do Outro Lado. Um ser que nunca foi derrotado, nunca foi controlado e nunca foi aprisionado.
+Defesa: 66
+Pontos de Vida: 1666
+VD: 400
+Atributos:
+  - Agilidade: 6
+  - Força: 6
+  - Intelecto: 6
+  - Presença: 6
+  - Vigor: 6
