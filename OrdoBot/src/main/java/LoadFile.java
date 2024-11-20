@@ -4,15 +4,14 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class LoadFile {
+    private static String cachedContent;
 
     public static String loadDocumentContent(String filePath) throws IOException {
-        Path path = Path.of(filePath);
-        List<String> lines = Files.readAllLines(path);
-        return String.join("\n", lines);
-    }
-
-    public static List<String> loadDocumentLines(String filePath) throws IOException {
-        Path path = Path.of(filePath);
-        return Files.readAllLines(path);
+        if (cachedContent == null) {
+            Path path = Path.of(filePath);
+            List<String> lines = Files.readAllLines(path);
+            cachedContent = String.join("\n", lines);
+        }
+        return cachedContent;
     }
 }
