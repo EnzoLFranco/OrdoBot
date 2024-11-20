@@ -4,25 +4,24 @@ import io.github.ollama4j.models.response.OllamaResult;
 import io.github.ollama4j.utils.OptionsBuilder;
 import et.telebof.BotClient;
 import java.io.IOException;
-import java.util.Random;
 
-public class SamubottFake {
+public class OrdoBot {
     static final String TOKEN = "6594489096:AAHCxQAmsLNqKHe1oap6rZwltceoiiDaNds";
 
-    public static void main(String[] args) throws ToolInvocationException, IOException, InterruptedException {
+    public static void main(String[] args) throws IOException{
         final BotClient bot = new BotClient(TOKEN);
         final String GEMMA_API = "http://127.0.0.1:11434";
-        final String MODEL_ID = "gemma2";
+        final String MODEL_ID = "gemma2:2b";
 
         // Carrega o conteúdo do arquivo .txt como string
-        String documentContent = LoadFile.loadDocumentContent("Samubott Fake/src/files/text.txt");
+        String documentContent = LoadFile.loadDocumentContent("src/files/text.txt");
 
         // Configurando a API Gemma2
         OllamaAPI ollamaAPI = new OllamaAPI(GEMMA_API);
 
         // Comando /start
         bot.onMessage(filter -> filter.commands("start"), (context, message) -> {
-            context.reply("Olá, sou o Samubott! Como posso te ajudar hoje?").exec();
+            context.reply("Olá, sou o OrdoBot! Como posso te ajudar hoje?").exec();
         });
 
         //Comando /d4
@@ -65,7 +64,7 @@ public class SamubottFake {
         bot.onMessage(filter -> filter.text(), (context, message) -> {
             ollamaAPI.setRequestTimeoutSeconds(300);
             try {
-                String userInput = documentContent + "\n\nPergunta do usuário: " + message.text;
+                String userInput = documentContent + "\n\nPergunta: " + message.text;
                 OllamaResult userResponse = ollamaAPI.generate(MODEL_ID, userInput, true, new OptionsBuilder().build());
                 context.reply(userResponse.getResponse()).exec();
             } catch (Exception e) {
