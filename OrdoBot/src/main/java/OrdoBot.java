@@ -53,7 +53,20 @@ public class OrdoBot {
             }
             context.reply("O resultado da rolagem do " + dado + ": " + resultado).exec();
         });
-        
+
+        //Comando /aleatorio
+        bot.onMessage(filter -> filter.commands("aleatorio"), (context, message) -> {
+            ollamaAPI.setRequestTimeoutSeconds(300);
+            try {
+                String userInput = documentContent + "\n\nDê o nome e atributos de uma das criaturas, apenas isso.";
+                OllamaResult userResponse = ollamaAPI.generate(MODEL_ID, userInput, true, new OptionsBuilder().build());
+                context.reply(userResponse.getResponse()).exec();
+            } catch (Exception e) {
+                System.out.println("Erro ao processar a mensagem: " + e.getMessage());
+                context.reply("Erro ao processar a mensagem.").exec();
+            }
+        });
+
         // Deteccao da mensagem
         bot.onMessage(filter -> filter.text(), (context, message) -> {
             ollamaAPI.setRequestTimeoutSeconds(300);
