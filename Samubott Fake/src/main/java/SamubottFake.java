@@ -1,10 +1,10 @@
-import dev.langchain4j.chain.ConversationalRetrievalChain;
 import io.github.ollama4j.OllamaAPI;
 import io.github.ollama4j.exceptions.ToolInvocationException;
 import io.github.ollama4j.models.response.OllamaResult;
 import io.github.ollama4j.utils.OptionsBuilder;
 import et.telebof.BotClient;
 import java.io.IOException;
+import java.util.Random;
 
 public class SamubottFake {
     static final String TOKEN = "6594489096:AAHCxQAmsLNqKHe1oap6rZwltceoiiDaNds";
@@ -15,7 +15,7 @@ public class SamubottFake {
         final String MODEL_ID = "gemma2";
 
         // Carrega o conteúdo do arquivo .txt como string
-        String documentContent = LoadFile.loadDocumentContent("src/files/text.txt");
+        String documentContent = LoadFile.loadDocumentContent("Samubott Fake/src/files/text.txt");
 
         // Configurando a API Gemma2
         OllamaAPI ollamaAPI = new OllamaAPI(GEMMA_API);
@@ -25,9 +25,45 @@ public class SamubottFake {
             context.reply("Olá, sou o Samubott! Como posso te ajudar hoje?").exec();
         });
 
-        // Detecção da mensagem
+        //Comando /d4
+        bot.onMessage(filter -> filter.commands("d4"), (context, message) -> {
+            String resultd4 = RollDices.rollD4();
+            context.reply(resultd4).exec();
+        });
+
+        //Comando /d6
+        bot.onMessage(filter -> filter.commands("d6"), (context, message) -> {
+            String resultd6 = RollDices.rollD6();
+            context.reply(resultd6).exec();
+        });
+
+        //Comando /d8
+        bot.onMessage(filter -> filter.commands("d8"), (context, message) -> {
+            String resultd8 = RollDices.rollD8();
+            context.reply(resultd8).exec();
+        });
+
+        //Comando /d10
+        bot.onMessage(filter -> filter.commands("d10"), (context, message) -> {
+            String resultd10 = RollDices.rollD10();
+            context.reply(resultd10).exec();
+        });
+
+        //Comando /d12
+        bot.onMessage(filter -> filter.commands("d12"), (context, message) -> {
+            String resultd12 = RollDices.rollD12();
+            context.reply(resultd12).exec();
+        });
+
+        //Comando /d20
+        bot.onMessage(filter -> filter.commands("d20"), (context, message) -> {
+            String resultd20 = RollDices.rollD20();
+            context.reply(resultd20).exec();
+        });
+
+        // Deteccao da mensagem
         bot.onMessage(filter -> filter.text(), (context, message) -> {
-            ollamaAPI.setRequestTimeoutSeconds(200);
+            ollamaAPI.setRequestTimeoutSeconds(300);
             try {
                 String userInput = documentContent + "\n\nPergunta do usuário: " + message.text;
                 OllamaResult userResponse = ollamaAPI.generate(MODEL_ID, userInput, true, new OptionsBuilder().build());
