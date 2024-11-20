@@ -21,7 +21,7 @@ public class OrdoBot {
 
         // Comando /start
         bot.onMessage(filter -> filter.commands("start"), (context, message) -> {
-            context.reply("Olá, sou o OrdoBot! Como posso te ajudar hoje?").exec();
+            context.reply("Olá, sou o OrdoBot, seu assistente pessoal para suas sessões de Ordem Paranormal RPG! O que vamos fazer hoje?").exec();
         });
 
         //Comando /rolar
@@ -53,8 +53,7 @@ public class OrdoBot {
             }
             context.reply("O resultado da rolagem do " + dado + ": " + resultado).exec();
         });
-
-
+        
         // Deteccao da mensagem
         bot.onMessage(filter -> filter.text(), (context, message) -> {
             ollamaAPI.setRequestTimeoutSeconds(300);
