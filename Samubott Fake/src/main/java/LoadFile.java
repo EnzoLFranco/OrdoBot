@@ -10,4 +10,9 @@ public class LoadFile {
         List<String> lines = Files.readAllLines(path);
         return String.join("\n", lines);
     }
+
+    public static List<String> loadDocumentLines(String filePath) throws IOException {
+        Path path = Path.of(filePath);
+        return Files.readAllLines(path);
+    }
 }
