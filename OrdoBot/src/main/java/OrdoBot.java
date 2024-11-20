@@ -6,7 +6,7 @@ import et.telebof.BotClient;
 import java.io.IOException;
 
 public class OrdoBot {
-    static final String TOKEN = "6594489096:AAHCxQAmsLNqKHe1oap6rZwltceoiiDaNds";
+    static final String TOKEN = "7271337289:AAHPdqcfv4QR9uxL7R1EhpmQpon8fej2pOs";
 
     public static void main(String[] args) throws IOException{
         final BotClient bot = new BotClient(TOKEN);
@@ -21,8 +21,19 @@ public class OrdoBot {
 
         // Comando /start
         bot.onMessage(filter -> filter.commands("start"), (context, message) -> {
-            context.reply("Olá, sou o OrdoBot, seu assistente pessoal para suas sessões de Ordem Paranormal RPG! O que vamos fazer hoje?").exec();
+            context.reply("Olá, sou o OrdoBot, seu assistente pessoal para suas sessões de Ordem Paranormal RPG! O que vamos fazer hoje? (Dê /help para ver todos os comandos)").exec();
         });
+
+        //Comando /help
+        bot.onMessage(filter -> filter.commands("help"), (context, message) -> {
+            String ajuda = "Comandos disponíveis:\n" +
+                    "- /start: Carrega as informações das criaturas e introduz o bot.\n" +
+                    "- /rolar [d4, d6, d8, d10, d12, d20]: Rola o dado especificado.\n" +
+                    "- /aleatorio: Exibe uma criatura aleatória.\n" +
+                    "- Para informações sobre as criaturas, apenas pergunte! :)";
+            context.reply(ajuda).exec();
+        });
+
 
         //Comando /rolar
         bot.onMessage(filter -> filter.commands("rolar"), (context, message) -> {
