@@ -1,1 +1,79 @@
-The sky is blue and the sun is yellow.
+# Criatura 1
+Nome: Sanguinário
+Aparência: Humanoide desfigurado, pele cinzenta manchada de vermelho, olhos vazios
+Origem: Ritual de invocação falho
+Habilidades: Superforça, resistência física, absorção de sangue para regeneração
+Fraquezas: Luz divina, isolamento de sangue (impede regeneração)
+Status:
+  - Vida: 150/150
+  - Sanidade: 30/100
+  - Força: 20
+  - Agilidade: 10
+  - Inteligência: 5
+Perícias: Combate brutal, rastreamento por cheiro
+Comportamento: Agressivo, instintivo, persegue presas até exauri-las
+Descrição: Criatura descontrolada que caça compulsivamente para consumir sangue, resultado de rituais falhos envolvendo magia de sacrifício.
+
+# Criatura 2
+Nome: Caçador da Névoa
+Aparência: Figura translúcida que emerge de névoa vermelha, garras afiadas
+Origem: Energia residual de rituais antigos
+Habilidades: Invisibilidade na névoa, ataques à distância com projéteis de sangue
+Fraquezas: Fogo, ambientes secos
+Status:
+  - Vida: 80/80
+  - Sanidade: 50/100
+  - Força: 12
+  - Agilidade: 18
+  - Inteligência: 8
+Perícias: Emboscadas, combate à distância
+Comportamento: Silencioso, predador estratégico, ataca quando a vítima está vulnerável
+Descrição: Uma manifestação paranormal ligada a locais com grandes derramamentos de sangue e tragédias.
+
+# Criatura 3
+Nome: Parasita Carmesim
+Aparência: Massa disforme de sangue coagulado, tentáculos viscosos
+Origem: Corrompimento sobrenatural em fontes de sangue
+Habilidades: Infecção por contato, drenagem vital contínua, adaptação física
+Fraquezas: Energia elétrica, purificação com água benta
+Status:
+  - Vida: 100/100
+  - Sanidade: 10/100
+  - Força: 10
+  - Agilidade: 6
+  - Inteligência: 2
+Perícias: Resistência a dano físico, drenagem contínua
+Comportamento: Hostil, parasita corpos vivos, tenta expandir sua massa
+Descrição: Um organismo sobrenatural que cresce ao consumir sangue, espalhando-se como uma praga viva.
+
+# Criatura 4
+Nome: Guardião Sangrento
+Aparência: Cavaleiro espectral envolto em uma armadura manchada de sangue
+Origem: Protetor de relíquias malignas, conjurado por magia antiga
+Habilidades: Invocação de espadas etéreas, criação de barreiras de sangue
+Fraquezas: Armas abençoadas, dispersão por luz intensa
+Status:
+  - Vida: 200/200
+  - Sanidade: 20/100
+  - Força: 18
+  - Agilidade: 12
+  - Inteligência: 15
+Perícias: Combate estratégico, defesa impenetrável
+Comportamento: Passivo até ser provocado ou seu objeto protegido ser ameaçado
+Descrição: Uma figura imponente, criada para guardar locais ou itens de grande poder oculto. Luta até ser destruído.
+
+# Criatura 5
+Nome: Espectro do Tormento
+Aparência: Forma vaporosa com traços humanos, exalando um brilho avermelhado
+Origem: Espírito de alguém que morreu em rituais de sacrifício
+Habilidades: Possessão, manipulação emocional, drenagem de energia mental
+Fraquezas: Selos de contenção, cânticos de purificação
+Status:
+  - Vida: 50/50
+  - Sanidade: 10/100
+  - Força: 2
+  - Agilidade: 15
+  - Inteligência: 20
+Perícias: Manipulação psicológica, ilusões
+Comportamento: Sádico, busca enlouquecer suas vítimas antes de consumir suas energias
+Descrição: Um espírito atormentado que se alimenta das emoções negativas das vítimas, perpetuando seu ciclo de sofrimento.
