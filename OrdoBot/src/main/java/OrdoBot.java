@@ -24,41 +24,36 @@ public class OrdoBot {
             context.reply("Olá, sou o OrdoBot! Como posso te ajudar hoje?").exec();
         });
 
-        //Comando /d4
-        bot.onMessage(filter -> filter.commands("d4"), (context, message) -> {
-            String resultd4 = RollDices.rollD4();
-            context.reply(resultd4).exec();
+        //Comando /rolar
+        bot.onMessage(filter -> filter.commands("rolar"), (context, message) -> {
+            String dado = message.text.replace("/rolar ", "").toLowerCase();
+            int resultado = 0;
+            switch (dado) {
+                case "d4":
+                    resultado = (int) (Math.random() * 4) + 1;
+                    break;
+                case "d6":
+                    resultado = (int) (Math.random() * 6) + 1;
+                    break;
+                case "d8":
+                    resultado = (int) (Math.random() * 8) + 1;
+                    break;
+                case "d10":
+                    resultado = (int) (Math.random() * 10) + 1;
+                    break;
+                case "d12":
+                    resultado = (int) (Math.random() * 12) + 1;
+                    break;
+                case "d20":
+                    resultado = (int) (Math.random() * 20) + 1;
+                    break;
+                default:
+                    context.reply("Comando inválido. Use /rolar [d4, d6, d8, d10, d12, d20]").exec();
+                    return;
+            }
+            context.reply("O resultado da rolagem do " + dado + ": " + resultado).exec();
         });
 
-        //Comando /d6
-        bot.onMessage(filter -> filter.commands("d6"), (context, message) -> {
-            String resultd6 = RollDices.rollD6();
-            context.reply(resultd6).exec();
-        });
-
-        //Comando /d8
-        bot.onMessage(filter -> filter.commands("d8"), (context, message) -> {
-            String resultd8 = RollDices.rollD8();
-            context.reply(resultd8).exec();
-        });
-
-        //Comando /d10
-        bot.onMessage(filter -> filter.commands("d10"), (context, message) -> {
-            String resultd10 = RollDices.rollD10();
-            context.reply(resultd10).exec();
-        });
-
-        //Comando /d12
-        bot.onMessage(filter -> filter.commands("d12"), (context, message) -> {
-            String resultd12 = RollDices.rollD12();
-            context.reply(resultd12).exec();
-        });
-
-        //Comando /d20
-        bot.onMessage(filter -> filter.commands("d20"), (context, message) -> {
-            String resultd20 = RollDices.rollD20();
-            context.reply(resultd20).exec();
-        });
 
         // Deteccao da mensagem
         bot.onMessage(filter -> filter.text(), (context, message) -> {
