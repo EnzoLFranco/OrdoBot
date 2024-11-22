@@ -6,7 +6,7 @@ import et.telebof.BotClient;
 import java.io.IOException;
 
 public class OrdoBot {
-    static final String TOKEN = "7271337289:AAHPdqcfv4QR9uxL7R1EhpmQpon8fej2pOs";
+    static final String TOKEN = "INSIRA SEU TOKEN AQUI";
 
     public static void main(String[] args) throws IOException{
         final BotClient bot = new BotClient(TOKEN);
