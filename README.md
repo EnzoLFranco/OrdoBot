@@ -47,9 +47,7 @@ Apos instalar o Ollama, execute o aplicativo e digite o comando "ollama run gemm
 + Abra o projeto no Intellij e aguarde a instalação automática das dependencias do projeto;
 + Abra o arquivo "Ordobot.java" e insira o Token de seu bot na seguinte linha;
   
-  ´´´java
   static final String TOKEN = "INSIRA SEU TOKEN AQUI";
-  ´´´
   
 + Execute o arquivo "Ordobot.java"
 
