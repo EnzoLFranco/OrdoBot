@@ -9,7 +9,7 @@
 ## Sumario
 * [Sobre o projeto](#installation)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Funções e comandos](#funcoes-e-comandos) 
+* [Funções e comandos](#funções-e-comandos) 
   * [Comandos](#comandos)
 * [Como executar](#como-executar)
 
