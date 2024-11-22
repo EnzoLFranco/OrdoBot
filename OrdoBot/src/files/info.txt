@@ -1,0 +1,193 @@
+Nome: Aniquilação
+Elemento: Sangue e Medo
+Ações: Agarrão, Instinto Aniquilador, Apertar e Destruir, Bater as Asas, Estrangulamento Final e Tempestade de Espinhos
+Vulnerabilidade: Morte
+Deslocamento: 15 metros
+Descrição: Uma aberração incomparável, a maior criatura já registrada na história, descrito como um apocalipse vivo.
+Defesa: 58
+Pontos de Vida: 1200
+VD: 380
+Atributos:
+  - Agilidade: 4
+  - Força: 5
+  - Intelecto: 3
+  - Presença: 4
+  - Vigor: 5
+
+Nome: Carente
+Elemento: Sangue e Morte
+Ações: Forma Infantil, Rasteira de Tentáculo, Sugada Mortal e Você é minha Mamãe?
+Vulnerabilidade: Morte
+Deslocamento: 12 metros
+Descrição: Uma manifestação paranormal originada a partir de um conto de terror, nascida da inveja de um ser que nunca sentiu amor.
+Defesa: 40
+Pontos de Vida: 700
+VD: 300
+Atributos:
+  - Agilidade: 4
+  - Força: 4
+  - Intelecto: 2
+  - Presença: 3
+  - Vigor: 4
+
+Nome: O Diabo
+Elemento: Sangue, Conhecimento e Medo
+Ações: Explodir em Sangue, Sangrar, Transportar pelo Sangue, Senhor do Sangue, Pacto e Desejos de Sangue
+Vulnerabilidade: Morte
+Deslocamento: 18 metros
+Descrição: O Príncipe do Ódio, o Portador do Trono ou o Sangue Encarnado. O Diabo é uma manifestação mais antigas do Outro Lado. Um ser que nunca foi derrotado, nunca foi controlado e nunca foi aprisionado.
+Defesa: 66
+Pontos de Vida: 1666
+VD: 400
+Atributos:
+  - Agilidade: 6
+  - Força: 6
+  - Intelecto: 6
+  - Presença: 6
+  - Vigor: 6
+
+
+Nome: Ceifador Espiral
+Elemento: Morte e Medo
+Ações: Transporte pelo Pó, Contemplar a Espiral e Cinzas das Terras Desoladas
+Vulnerabilidade: Energia
+Deslocamento: 15 metros
+Descrição: A própria Morte, uma manifestação paranormal da espiral do tempo eterno.
+Defesa: 58
+Pontos de Vida: 999
+VD: 380
+Atributos:
+  - Agilidade: 5
+  - Força: 5
+  - Intelecto: 5
+  - Presença: 5
+  - Vigor: 5
+
+Nome: Sempiternal
+Elemento: Morte
+Ações: Correntes de Lodo
+Vulnerabilidade: Energia
+Deslocamento: 12 metros
+Descrição: É o resultado da manifestação da Morte através de uma evolução gradual passada por inúmeras gerações de uma civilização isolada.
+Defesa: 53
+Pontos de Vida: 990
+VD: 360
+Atributos:
+  - Agilidade: 5
+  - Força: 5
+  - Intelecto: 4
+  - Presença: 5
+  - Vigor: 4
+
+
+Nome: O Deus da Morte
+Elemento: Morte, Conhecimento e Medo
+Ações: Controlar Relógio Interno, Controlar Mortos, Espiral Descendente e Espiral Destrutiva
+Vulnerabilidade: Energia
+Deslocamento: 15 metros
+Descrição: O Parasita de Dimensões é uma entidade suprema que deforma a aparência do ambiente inteiro, consumindo o tempo de tudo o que é vivo.
+Defesa: 60
+Pontos de Vida: 2000
+VD: 400
+Atributos:
+  - Agilidade: 6
+  - Força: 6
+  - Intelecto: 5
+  - Presença: 5
+  - Vigor: 7
+
+Nome: O Estrangeiro
+Elemento: Conhecimento, Energia e Medo
+Ações: Comandar, Apagar Memória, Oblívio e Incubar
+Vulnerabilidade: Sangue
+Deslocamento: 15 metros
+Descrição: Uma manifestação inteligente e desconhecida, se comunicando em uma linguagem própria e interferindo em dispositivos eletrônicos.
+Defesa: 50
+Pontos de Vida: 750
+VD: 340
+Atributos:
+  - Agilidade: 3
+  - Força: 5
+  - Intelecto: 5
+  - Presença: 5
+  - Vigor: 3
+
+Nome: Anjo
+Elemento: Conhecimento e Medo
+Ações: Faixas Detentoras, Chamas Reveladoras e Raio Dourado
+Vulnerabilidade: Sangue
+Deslocamento: 24 metros
+Descrição: Uma criatura capaz de levar a loucura apenas ao ser observado, descrita como "O rosto da verdade impossível", uma presença inesquecível, indescritível, revelador e aterrorizante.
+Defesa: 57
+Pontos de Vida: 1111
+VD: 380
+Atributos:
+  - Agilidade: 4
+  - Força: 5
+  - Intelecto: 5
+  - Presença: 5
+  - Vigor: 5
+
+Nome: Silhueta
+Elemento: Conhecimento
+Ações: Reescrever a Realidade e Toque Devastador
+Vulnerabilidade: Sangue
+Deslocamento: 12 metros
+Descrição: A ausência consciente de si mesmo, um eco de memória de alguém que foi submetido a inexistência, uma forma vazia descrita como "A face de Deus".
+Defesa: 55
+Pontos de Vida: 500
+VD: 360
+Atributos:
+  - Agilidade: 4
+  - Força: 4
+  - Intelecto: 5
+  - Presença: 5
+  - Vigor: 4
+
+Nome: Telopsia
+Elemento: Energia, Morte e Medo
+Ações: Viajar pela Tela, Tela Zumbificadora e Prender na Tela
+Vulnerabilidade: Conhecimento
+Deslocamento: 12 metros
+Descrição: Uma fita VHS amaldiçoada que manifesta uma criatura de corpo esquelético com uma televisão antiga como sua cabeça.
+Defesa: 48
+Pontos de Vida: 560
+VD: 340
+Atributos:
+  - Agilidade: 4
+  - Força: 2
+  - Intelecto: 3
+  - Presença: 5
+  - Vigor: 2
+
+Nome: Viajante
+Elemento: Energia, Conhecimento e Medo
+Ações: Devorar Memórias
+Vulnerabilidade: Conhecimento
+Deslocamento: 9 metros
+Descrição: O Viajante das Polaroids é um ser que distorce as memórias de seu alvo, gerando traumas e se alimentando deles.
+Defesa: 34
+Pontos de Vida: 360
+VD: 200
+Atributos:
+  - Agilidade: 4
+  - Força: 2
+  - Intelecto: 3
+  - Presença: 4
+  - Vigor: 2
+
+Nome: Anfitrião
+Elemento: Energia, Conhecimento e Medo
+Ações: Teatro, Queimar, Romance Forçado, Eu sou o Caos, Afogamento e Teletransporte
+Vulnerabilidade: Conhecimento
+Deslocamento: 12 metros
+Descrição: O próprio Caos encarnado, uma entidade poderosa e insana, com inúmeras personalidades em conflito consigo mesmo, repetindo a mesma frase sempre "O Caos sempre estará ao seu lado. É inevitável"
+Defesa: 59
+Pontos de Vida: 01413
+VD: 0413
+Atributos:
+  - Agilidade: 7
+  - Força: 5
+  - Intelecto: 6
+  - Presença: 6
+  - Vigor: 5

@@ -14,7 +14,7 @@ public class OrdoBot {
         final String MODEL_ID = "gemma2:2b";
 
         // Carrega o conteúdo do arquivo .txt como string
-        String documentContent = LoadFile.loadDocumentContent("src/files/text.txt");
+        String documentContent = LoadFile.loadDocumentContent("src/files/info.txt");
 
         // Configurando a API Gemma2
         OllamaAPI ollamaAPI = new OllamaAPI(GEMMA_API);
@@ -33,7 +33,6 @@ public class OrdoBot {
                     "- Para informações sobre as criaturas, apenas pergunte! :)";
             context.reply(ajuda).exec();
         });
-
 
         //Comando /rolar
         bot.onMessage(filter -> filter.commands("rolar"), (context, message) -> {
